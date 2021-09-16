@@ -1,0 +1,650 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.top {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logoBox {
+  display: flex;
+  margin-left: 8vw;
+  margin-top: 3vw;
+  justify-content: center;
+  flex-direction: row;
+}
+.logoBox:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.logo {
+  width: 6vw;
+  height: 6vw;
+}
+
+.logoText {
+  padding-left: 2vw;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-style: italic;
+  color: white;
+  font-size: 2vw;
+}
+
+.menu {
+  font-family: 'Open Sans';
+  color: white;
+  font-size: 1vw;
+  display: flex;
+  height: 2vw;
+  flex-direction: row;
+  margin-top: 8vw;
+  margin-right: 15vw;
+  align-items: center;
+  background-color: #f6c506;
+  text-transform: uppercase;
+  -webkit-box-shadow: -10px -12px 14px -3px rgba(131, 111, 24, 0.6);
+  box-shadow: -10px -12px 14px -3px rgba(180, 156, 45, 0.6);
+  border-radius: 2px;
+  border-width: 10px;
+  border: gray;
+}
+
+.about,
+.services,
+.contact {
+  display: flex;
+  position: center;
+  height: 2vw;
+  border: gray;
+  border-style: solid;
+  border-width: 1px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.about:hover,
+.services:hover,
+.contact:hover {
+  cursor: pointer;
+  background-color: rgb(243, 184, 23);
+  transition: all 0.3s ease;
+}
+
+#menuIcon {
+  padding-right: 1vw;
+  width: 1vw;
+}
+
+.firstPage {
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 15vw;
+  height: auto;
+  padding-bottom: 5vw;
+}
+
+.player {
+  padding-left: 10vw;
+}
+.videoPlayer {
+  width: 45vw;
+}
+
+.firtstHeading {
+  padding-left: 3vw;
+  width: 30%;
+  font-family: 'Open Sans';
+  font-size: 3vw;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.headings1st {
+  top: 0px;
+  margin: 0px;
+}
+
+#yellow {
+  color: #f6c506;
+}
+#white {
+  color: white;
+}
+
+.secondPage {
+  background-image: url(./assets/2ndBackground.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.design,
+.customise,
+.free {
+  width: 25vw;
+  height: 10vw;
+  padding-top: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  border: 0.5px;
+  border-style: solid;
+  border-top: none;
+  border-bottom: none;
+  border-color: gray;
+}
+
+.design:hover,
+.customise:hover,
+.free:hover {
+  cursor: pointer;
+  background-color: rgb(221, 221, 221);
+  transition: all 0.5s ease;
+}
+
+#icons {
+  width: 5vw;
+  height: auto;
+}
+.headings {
+  text-transform: uppercase;
+  color: gray;
+  font-family: 'Open Sans';
+  font-size: 1vw;
+}
+
+.thirdPage {
+  background-image: url(./assets/3rdback.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 2vw;
+}
+
+.leftBox {
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdHeader {
+  font-family: 'Open Sans';
+  font-size: 2.4vw;
+  color: white;
+  text-transform: uppercase;
+}
+
+.leftBox2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.textBox {
+  width: 25vw;
+  height: 15vw;
+  background-color: #ed9e03;
+  display: flex;
+}
+.thirdText {
+  padding-top: 10px;
+  padding-left: 15px;
+  font-family: 'Open Sans';
+  font-size: 1.8vw;
+  color: white;
+  margin: 0px;
+}
+.plus {
+  width: 1vw;
+  height: 1vw;
+  align-self: flex-end;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.secondVideo {
+  width: 20vw;
+  height: 15vw;
+}
+.date {
+  width: 5vw;
+}
+
+.rightBox {
+  margin-left: 5vw;
+  margin-top: 3.1vw;
+  background-color: #ed9e03;
+  width: 25vw;
+  height: 15vw;
+}
+
+.rightBox2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.twitter {
+  padding-top: 3vw;
+  width: 10vw;
+}
+.plus2 {
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  margin-left: 23.2vw;
+  margin-top: 2.3vw;
+}
+
+.twitterChat {
+  display: none;
+}
+.plus:hover,
+.plus2:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+
+.fourthPage {
+  background-image: url(./assets/background4.png);
+  background-size: cover;
+}
+
+.fourthHeading {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  color: #f6c506;
+  font-size: 3vw;
+  margin-bottom: 5vw;
+}
+
+.page4 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15vw;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+}
+
+#pc,
+#tablet {
+  padding-right: 2vw;
+}
+
+#pc {
+  width: 18vw;
+}
+
+#tablet {
+  width: 7vw;
+}
+
+#phone {
+  width: 2vw;
+  align-self: flex-end;
+  padding-bottom: 2.5vw;
+}
+
+.b1 {
+  z-index: 2;
+  position: relative;
+  left: 13vw;
+  top: -17vw;
+}
+#banner {
+  width: 7vw;
+}
+
+.banText {
+  position: relative;
+  top: -5.8vw;
+  left: 0.5vw;
+  font-family: 'Open Sans';
+  font-size: 0.9vw;
+  font-weight: bold;
+  color: white;
+}
+
+.list {
+  margin-left: 5vw;
+}
+
+li {
+  list-style: none;
+}
+
+li::before {
+  content: '\2022';
+  color: #f6c506;
+  display: inline-block;
+  width: 1em;
+  font-size: 2.5vw;
+}
+
+.circles {
+  font-family: 'Open Sans';
+  font-size: 1.5vw;
+  color: gray;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #4c4c4c;
+  display: flex;
+  align-items: center;
+  margin-top: -3vw;
+}
+
+.footerLogo {
+  margin-left: 10vw;
+  width: 3vw;
+  height: auto;
+}
+
+.footerText {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+  font-style: italic;
+  color: white;
+  font-size: 1.5vw;
+  padding-left: 1vw;
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) {
+  body {
+    overflow-x: hidden;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .logoBox,
+  .menu {
+    margin: 0px;
+  }
+
+  .logoBox {
+    width: 25vw;
+    height: 7vw;
+    background-color: #5a5a5a;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    width: 5vw;
+    height: auto;
+    margin-left: 2vw;
+  }
+  .logoText {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    font-size: 2.7vw;
+  }
+  .menu {
+    width: 75vw;
+    height: 7vw;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .about,
+  .services,
+  .contact {
+    height: 7vw;
+    width: 75vw;
+    font-size: 2.7vw;
+    color: gray;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+  #menuIcon {
+    width: 3.3vw;
+  }
+  .firtstHeading {
+    display: none;
+  }
+
+  .firstPage {
+    padding-top: 7vw;
+    padding-bottom: 0px;
+    background: none;
+  }
+  .player {
+    padding: 0;
+  }
+  .videoPlayer {
+    width: 100vw;
+    height: auto;
+  }
+
+  .secondPage {
+    margin-top: -1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+  }
+
+  .design,
+  .customise,
+  .free {
+    border: none;
+    height: 25vw;
+  }
+  #icons {
+    height: 12vw;
+    width: auto;
+  }
+
+  .headings {
+    font-size: 3vw;
+    font-weight: lighter;
+  }
+
+  .thirdHeader,
+  .date {
+    display: none;
+  }
+  .thirdPage {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: baseline;
+    background-color: white;
+    background-image: none;
+    height: auto;
+    padding-bottom: 0;
+  }
+  .leftBox {
+    margin: 0;
+  }
+  .leftBox {
+    height: 30vw;
+  }
+  .textBox {
+    height: 35vw;
+    width: 48vw;
+    margin-top: 1vw;
+    margin-left: 1.5vw;
+  }
+  .thirdText {
+    height: 35vw;
+    font-size: 4vw;
+  }
+  .plus {
+    width: 5vw;
+    height: 2vw;
+  }
+  .secondVideo {
+    width: 48vw;
+    height: 35vw;
+    margin-top: 1vw;
+    margin-left: 1.5vw;
+  }
+  .rightBox {
+    margin-top: 7vw;
+    margin-left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    height: 40vw;
+  }
+
+  .twitter {
+    width: 25vw;
+    height: auto;
+    padding-left: 13vw;
+    padding-right: 13vw;
+  }
+  .twitterChat {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4vw;
+  }
+
+  .chat {
+    width: 40vw;
+    height: 7vw;
+    margin-bottom: 2vw;
+    background-color: rgba(241, 241, 241, 0.842);
+    border-radius: 10px;
+  }
+
+  .chat1 {
+    width: 40vw;
+    height: 7vw;
+    margin-bottom: 2vw;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .chatText {
+    font-family: 'Open Sans';
+    font-size: 2.2vw;
+    margin: 0;
+    padding-top: 0.5vw;
+    padding-left: 1vw;
+  }
+
+  .inputBox {
+    display: flex;
+    width: 30vw;
+    height: 6vw;
+    max-width: 40vw;
+  }
+  .input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px;
+    width: 30vw;
+  }
+  .button {
+    border: 1px solid;
+    border-color: rgb(59, 55, 55);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: 'Open Sans';
+    font-size: 2.5vw;
+    color: white;
+    background-color: #dd9c1a;
+  }
+  input:focus {
+    outline: none;
+  }
+
+  .list,
+  .plus2 {
+    display: none;
+  }
+  .fourthHeading {
+    font-size: 6vw;
+    margin-top: 2.5vw;
+    margin-bottom: 11vw;
+  }
+  .page4 {
+    padding-left: 10vw;
+  }
+
+  #pc {
+    width: 50vw;
+  }
+
+  #tablet {
+    padding-left: 2vw;
+    width: 20vw;
+  }
+
+  #phone {
+    width: 8vw;
+    padding-bottom: 6.5vw;
+    padding-left: 1vw;
+  }
+  .b1 {
+    top: -45vw;
+    left: 8vw;
+  }
+  #banner {
+    width: 15vw;
+  }
+  .banText {
+    font-size: 2vw;
+    top: -12vw;
+    left: 1vw;
+  }
+  .fourthPage {
+    height: 70vw;
+  }
+
+  footer {
+    height: 40vw;
+  }
+  .footerLogo {
+    padding-top: 0.5vw;
+    padding-bottom: 1vw;
+    width: 4vw;
+    height: auto;
+  }
+  .footerText {
+    font-size: 2vw;
+  }
+}
